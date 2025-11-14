@@ -3,7 +3,6 @@
     service: dns
     permanent: true
     state: enabled
-  notify: reload firewalld
 
 - name: Reload firewalld to apply changes
   ansible.builtin.command: firewall-cmd --reload
