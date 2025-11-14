@@ -1,4 +1,4 @@
-bind_listen_ip: 192.168.1.10
+bind_listen_ip: 192.168.140.10
 client_ip: 192.168.140.11
 forward_zone_name: dns01.fedora.local
 reverse_zone_name: 140.168.192.in-addr.arpa
