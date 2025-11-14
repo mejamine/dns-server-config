@@ -1,7 +1,7 @@
 options {
   directory "/var/named";
   listen-on port 53 { {{ bind_listen_ip }}; };
-  allow-query { any; };
+  allow-query { {{network}}; };
 };
 
 zone "{{ forward_zone_name }}" IN {

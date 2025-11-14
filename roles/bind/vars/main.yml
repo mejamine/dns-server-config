@@ -6,4 +6,5 @@ soa_ns: dns01.fedora.local
 soa_admin: root.fedora.local
 client_hostname: client1.fedora.local
 domain: fedora.local
+network: 192.168.140.0/24
 
