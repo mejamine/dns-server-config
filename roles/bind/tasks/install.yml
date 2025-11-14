@@ -1,0 +1,4 @@
+- name: Install BIND
+  dnf:
+    name: bind
+    state: present

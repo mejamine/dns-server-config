@@ -1,0 +1,6 @@
+- include_task: install.yml
+- include_task: configure.yml
+- include_task: security.yml
+- include_task: firewall.yml
+- include_task: service.yml
+- include_task: resolv.yml

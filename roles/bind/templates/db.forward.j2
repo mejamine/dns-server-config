@@ -1,0 +1,12 @@
+$TTL 86400
+@ IN SOA {{ soa_ns }}. {{ soa_admin }}. (
+  2025111401 ; Serial
+  3600       ; Refresh
+  1800       ; Retry
+  604800     ; Expire
+  86400 )    ; Minimum
+
+@ IN NS {{ soa_ns }}.
+@ IN A  {{bind_listen_ip}}
+dns01   IN A    {{bind_listen_ip}}
+client1 IN A    {{client_ip}}

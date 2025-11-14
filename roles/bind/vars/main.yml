@@ -1,0 +1,9 @@
+bind_listen_ip: 192.168.1.10
+client_ip: 192.168.140.11
+forward_zone_name: dns01.fedora.local
+reverse_zone_name: 140.168.192.in-addr.arpa
+soa_ns: dns01.fedora.local
+soa_admin: root.fedora.local
+client_hostname: client1.fedora.local
+domain: fedora.local
+

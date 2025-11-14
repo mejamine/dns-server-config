@@ -1,0 +1,10 @@
+- name: Allow DNS service through the firewall permanently
+  ansible.posix.firewalld:
+    service: dns
+    permanent: true
+    state: enabled
+  notify: reload firewalld
+
+- name: Reload firewalld to apply changes
+  ansible.builtin.command: firewall-cmd --reload
+  when: ansible_facts.services['firewalld'].state == 'running'
