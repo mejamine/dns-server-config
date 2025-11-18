@@ -1,2 +1,2 @@
 run :
-ansible-playbook playbooks/main.yaml --ask-become-pass
+ansible-playbook playbooks/main.yml --ask-become-pass
